@@ -19,7 +19,7 @@ namespace Calories
             int serving = 4;
             int calories = 300;
             int caloriesperserving = calories / serving;
-
+           
             //Calculations
             int consumedcalories = cookies * caloriesperserving;
             Console.WriteLine("You consumed " + consumedcalories + " total calories.");
