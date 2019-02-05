@@ -24,18 +24,25 @@ namespace Assignment4
             int hours = x / 3600;
             int days = x / 86400;
 
-             if (x >= 60)
+            try
             {
-                label2.Text = "There is " + minutes + " minutes in " + x + " seconds";
+                if (x >= 60)
+                {
+                    label2.Text = "There is " + minutes + " minutes in " + x + " seconds";
+                }
+                if (x >= 3600)
+                {
+
+                    label3.Text = "There is " + hours + " hours in " + x + " seconds";
+                }
+                if (x >= 86400)
+                {
+                    label4.Text = "There is " + days + " days in " + x + " seconds";
+                }
             }
-             if (x >= 3600)
+            catch
             {
-                
-                label3.Text = "There is " + hours + " hours in " + x + " seconds";
-            }
-             if (x >= 86400)
-            {
-                label4.Text = "There is " + days + " days in " + x + " seconds";
+                label2.Text = "Please enter a positive number";
             }
         }
 
