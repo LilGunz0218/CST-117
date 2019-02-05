@@ -19,7 +19,7 @@ namespace Assignment4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int x = Convert.ToInt32(textBox1.Text);
+            int x = int.Parse(textBox1.Text);
             int minutes = x / 60;
             int hours = x / 3600;
             int days = x / 86400;
