@@ -10,6 +10,8 @@ using System.Windows.Forms;
 
 namespace Assignment4
 {
+    // Tommy Trujillo III
+    // This is my own work.
     public partial class Form1 : Form
     {
         public Form1()
