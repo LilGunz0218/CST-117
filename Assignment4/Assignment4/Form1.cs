@@ -19,10 +19,10 @@ namespace Assignment4
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double x = Convert.ToDouble(textBox1.Text);
-            double minutes = x / 60;
-            double hours = x / 3600;
-            double days = x / 86400;
+            int x = Convert.ToInt32(textBox1.Text);
+            int minutes = x / 60;
+            int hours = x / 3600;
+            int days = x / 86400;
 
              if (x >= 60)
             {
@@ -31,12 +31,17 @@ namespace Assignment4
              if (x >= 3600)
             {
                 
-                label2.Text = "There is " + hours + " hours in " + x + " seconds";
+                label3.Text = "There is " + hours + " hours in " + x + " seconds";
             }
              if (x >= 86400)
             {
-                label2.Text = "There is " + days + " days in " + x + " seconds";
+                label4.Text = "There is " + days + " days in " + x + " seconds";
             }
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
