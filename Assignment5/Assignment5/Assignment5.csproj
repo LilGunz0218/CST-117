@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C97640CD-6BA0-4D58-9629-6AE3679D685A}</ProjectGuid>
+    <ProjectGuid>{45CB9AEE-5414-4439-A242-B137B9FAE8D5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OOCAssignment2</RootNamespace>
-    <AssemblyName>OOCAssignment2</AssemblyName>
+    <RootNamespace>Assignment5</RootNamespace>
+    <AssemblyName>Assignment5</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -65,7 +65,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -79,27 +78,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bandit.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blitz.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\iq.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jager.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\recruit.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SA.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bomb.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
