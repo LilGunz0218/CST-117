@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace Milestone2Updated
 {
-    //Tommy Trujillo III
-    //This is my own work.
-
-    public class Disc
+    public class Item
     {
         private string productid;
         public string Productid
-        { 
+        {
             get
             {
                 return productid;
@@ -68,7 +65,7 @@ namespace Milestone2Updated
             }
             set
             {
-                productcolor= value;
+                productcolor = value;
             }
         }
         private string productweight;
@@ -85,45 +82,5 @@ namespace Milestone2Updated
         }
 
 
-    }
-    
-    class Program
-    {
-        
-        static void Main(string[] args)
-        {
-            Disc newdisc = new Disc();
-            newdisc.Productname = "Gladiator";
-            Console.WriteLine(newdisc.Productname);
-            newdisc.Productid = "1";
-            Console.WriteLine(newdisc.Productid);
-            newdisc.Productprice = 12.50;
-            Console.WriteLine(newdisc.Productprice);
-            newdisc.Quantityonhand = 20;
-            Console.WriteLine(newdisc.Quantityonhand);
-            newdisc.Productcolor = "Pink";
-            Console.WriteLine(newdisc.Productcolor);
-            newdisc.Productweight = "175 grams";
-            Console.WriteLine(newdisc.Productweight);
-
-
-
-            Item testdisc = new Item();
-            testdisc.Productname = "Kong";
-            Console.WriteLine(testdisc.Productname);
-            testdisc.Productid = "2";
-            Console.WriteLine(testdisc.Productid);
-            testdisc.Productprice = 12.50;
-            Console.WriteLine(testdisc.Productprice);
-            testdisc.Quantityonhand = 5;
-            Console.WriteLine(testdisc.Quantityonhand);
-            testdisc.Productcolor = "Green";
-            Console.WriteLine(testdisc.Productcolor);
-            testdisc.Productweight = "173 grams";
-            Console.WriteLine(testdisc.Productweight);
-
-            Console.ReadKey();
-
-        }
     }
 }
