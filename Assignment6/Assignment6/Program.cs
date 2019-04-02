@@ -18,7 +18,8 @@ namespace Assignment6
               
                 bool SnakeEyes = false;
 
-                    //Sets the amount of sides for the dice
+                //Sets the amount of sides for the dice
+                
                     Random random = new Random();
                     int setside = random.Next(4, 21);
                     Console.WriteLine("The Dice has " + setside + " sides.");
