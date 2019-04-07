@@ -9,7 +9,7 @@ namespace Milestone3
     class Program
     {
 
-        static void Main(string[] args)
+       public static void Main(string[] args)
         {
             InvManager manager = new InvManager();
 

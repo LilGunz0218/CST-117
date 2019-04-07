@@ -40,7 +40,7 @@ namespace Milestone3
             for (int i = 0; i < items.Count(); i++)
             {
                 //does this product have the same name as param name
-                if (items[i].prodName == name)
+                if (items[i].p.name == name)
                     result = items[i];
             }
 
