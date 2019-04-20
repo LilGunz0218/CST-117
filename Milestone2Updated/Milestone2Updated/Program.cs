@@ -134,7 +134,7 @@ namespace Milestone2Updated
             Console.WriteLine("==========================================");
 
             //Tests getAllItems
-            im.getAllProducts();
+            im.getItemArray();
 
 
             Console.ReadKey();

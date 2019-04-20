@@ -4,10 +4,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Milestone2Updated
+namespace InventoryFinal
 {
-    class InvManager
+    public class Disc
     {
+        public string Productid { set; get; }
+        public string Productname { set; get; }
+        public double Productprice { set; get; }
+        public string Productcolor { set; get; }
+        public string Productweight { set; get; }
+        public int Quantityonhand { set; get; }
+
+        public Disc(string productid, string productname, double productprice, string productcolor, string productweight, int quantityonhand)
+        {
+            Productid = productid;
+            Productname = productname;
+            Productprice = productprice;
+            Productcolor = productcolor;
+            Productweight = productweight;
+            Quantityonhand = quantityonhand;
+        }
+    }
+
+    class InvManager
+
+    { 
         //product list
         private List<Disc> items;
 
@@ -22,13 +43,13 @@ namespace Milestone2Updated
         public void addItem(Disc item)
         {
 
-                if (!items.Contains(item))
-                {
-                    items.Add(item);
-                    Console.WriteLine("You added " + item.Productname);
+            if (!items.Contains(item))
+            {
+                items.Add(item);
+                Console.WriteLine("You added " + item.Productname);
 
-                }
-            
+            }
+
         }
 
         public void removeItem(Disc item)
@@ -43,7 +64,7 @@ namespace Milestone2Updated
 
             for (int i = 0; i < items.Count(); i++)
             {
-                
+
                 //does this product have the same price as param price
                 if (items[i].Productprice == price)
                     result = items[i];
@@ -80,7 +101,7 @@ namespace Milestone2Updated
             return result;
         }
 
-        public void restockDisc(Disc name,int quantity)
+        public void restockDisc(Disc name, int quantity)
         {
             name.Quantityonhand = name.Quantityonhand + quantity;
             Console.WriteLine("You added " + quantity + " discs to " + name.Productname);
@@ -98,18 +119,17 @@ namespace Milestone2Updated
             }
         }
 
-        public Disc[] getItemArray()
+        public List< Disc> getItemList()
         {
-            int index = 0;
-            Disc[] itemArr = new Disc[items.Count];
+            
+            List<Disc> itemList = new List<Disc>();
 
             foreach (Disc item in items)
             {
                 Disc i = item;
-                itemArr[index++] = i;
+                itemList.Add(i);
             }
-            return itemArr;
+            return itemList;
         }
     }
 }
-
